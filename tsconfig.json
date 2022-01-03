@@ -1,0 +1,16 @@
+{
+		"extends": "@tsconfig/svelte/tsconfig.json",
+		"include": ["src/**/*", "src/node_modules/**/*"],
+		"exclude": ["node_modules/*", "__sapper__/*", "static/*"],
+		"compilerOptions": {
+			"baseUrl": "./",
+			"paths": {
+				"crypto": [
+					"node_modules/crypto-browserify"
+				],
+				"stream": [
+					"node_modules/stream-browserify"
+				]
+			},
+		},
+	}
